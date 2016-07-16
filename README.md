@@ -23,34 +23,49 @@ Prerequesites:
 - Install [Vagrant](https://www.vagrantup.com/) <br />
 Then:
 - In the terminal, clone the repository <br />
-```git clone git@github.com:jaimeps/vagrant-data-science.git```
+```
+$ git clone git@github.com:jaimeps/vagrant-data-science.git
+```
 - Change to your project directory <br />
-```cd vagrant-data-science```
-- Run ```vagrant up``` to create the VM. This may take a few minutes.
-- Once the setup is finished, run ```vagrant ssh``` to login to the VM.	
+```
+$ cd vagrant-data-science
+```
+- Run 
+```
+$ vagrant up
+``` 
+to create the VM. This may take a few minutes.
+- Once the setup is finished, run 
+```
+$ vagrant ssh
+``` to login to the VM.	
 
 ### Jupyter notebook:
 To launch jupyter run <br />
-```jupyter notebook --ip=0.0.0.0``` <br />
+```
+$ jupyter notebook --ip=0.0.0.0
+``` <br />
 You can find the notebook in the host's browser at http://127.0.0.1:8888
 
 ### Pycharm integration:
 We can use our local Pycharm IDE with the Vagrant box as the Python interpreter. <br />
 In Pycharm go to Preferences > Project > Project Interpreter <br />
 Select "Add remote" in the settings button <br />
-<img src="https://github.com/jaimeps/vagrant-data-science/blob/master/images/add_remote.png" width="600"> <br />
+<img src="https://github.com/jaimeps/vagrant-data-science/blob/master/images/add_remote.png" width="800"> <br />
 Select Vagrant as the interpreter and the folder of the vagrant box in your computer <br />
-<img src="https://github.com/jaimeps/vagrant-data-science/blob/master/images/conf_remote.png" width="300"> <br />
+<img src="https://github.com/jaimeps/vagrant-data-science/blob/master/images/conf_remote.png" width="500"> <br />
 Now the Pycharm interpreter should look like this <br />
-<img src="https://github.com/jaimeps/vagrant-data-science/blob/master/images/vagrant_int.png" width="600"> <br />
+<img src="https://github.com/jaimeps/vagrant-data-science/blob/master/images/vagrant_int.png" width="800"> <br />
 
 ### Shared folder:
 For convenience the "shared" folder is synced.
 
 ### Customization:
 - To increase the memory or CPU count, change the following lines in the Vagrantfile: <br />
-```vb.memory = "1024"``` <br />
-```vb.cpus = 4``` <br />
+```
+vb.memory = "1024"
+vb.cpus = 4
+``` <br />
 - To add/remove Python modules in the setup, see the script in ```bootstrap.sh```
 
 ### References
