@@ -1,50 +1,50 @@
-## Vagrant - Data Science
+# Vagrant - Data Science
 
 <p align="center">
 	<img src="https://github.com/jaimeps/vagrant-data-science/blob/master/images/vagrant.png" width="150">
 </p>
 
-### Description:
+## Description:
 A Vagrant machine ready for development of data science projects in Python.
 
 The box includes: <br />
-1. Basics: [numpy](http://www.numpy.org/), [pandas](http://pandas.pydata.org/), [scipy](https://www.scipy.org/), [jupyter](http://jupyter.org/) <br />
-2. Data acquisition: [requests](http://docs.python-requests.org/en/master/), [beautifulsoup](https://www.crummy.com/software/BeautifulSoup/), [feedparser](http://pythonhosted.org/feedparser/), [scrapy](http://scrapy.org/) <br />
-3. NLP: [re](https://docs.python.org/2/library/re.html), [NLTK](http://www.nltk.org/) <br />
-4. Web Framework: [flask](http://flask.pocoo.org/) <br />
-5. Visualization: [matplotlib](http://matplotlib.org/), [seaborn](https://stanford.edu/~mwaskom/software/seaborn/), [bokeh](http://bokeh.pydata.org/en/latest/) <br />
-6. PostgreSQL connection: [psycopg2](http://initd.org/psycopg/) <br />
-7. AWS: [boto3](https://boto3.readthedocs.io/en/latest/) <br />
-8. Machine Learning: [scikit-learn](http://scikit-learn.org/stable/), [theano](http://deeplearning.net/software/theano/), [keras](http://keras.io/), [tensorflow](https://www.tensorflow.org/) <br />
+*1. Basics:* [numpy](http://www.numpy.org/), [pandas](http://pandas.pydata.org/), [scipy](https://www.scipy.org/), [jupyter](http://jupyter.org/) <br />
+*2. Data acquisition:* [requests](http://docs.python-requests.org/en/master/), [beautifulsoup](https://www.crummy.com/software/BeautifulSoup/), [feedparser](http://pythonhosted.org/feedparser/), [scrapy](http://scrapy.org/) <br />
+*3. NLP:* [re](https://docs.python.org/2/library/re.html), [NLTK](http://www.nltk.org/) <br />
+*4. Web Framework:* [flask](http://flask.pocoo.org/) <br />
+*5. Visualization:* [matplotlib](http://matplotlib.org/), [seaborn](https://stanford.edu/~mwaskom/software/seaborn/), [bokeh](http://bokeh.pydata.org/en/latest/) <br />
+*6. PostgreSQL connection:* [psycopg2](http://initd.org/psycopg/) <br />
+*7. AWS:* [boto3](https://boto3.readthedocs.io/en/latest/) <br />
+*8. Machine Learning:* [scikit-learn](http://scikit-learn.org/stable/), [theano](http://deeplearning.net/software/theano/), [keras](http://keras.io/), [tensorflow](https://www.tensorflow.org/) <br />
 
-### Instructions:
-1. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-2. Install [Vagrant](https://www.vagrantup.com/) <br />
-3. In the terminal, clone the repository <br />
+## Instructions:
+* Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+* Install [Vagrant](https://www.vagrantup.com/) <br />
+* In the terminal, clone the repository <br />
 ```
 $ git clone git@github.com:jaimeps/vagrant-data-science.git
 ```
-4. Change to your project directory <br />
+* Change to your project directory <br />
 ```
 $ cd vagrant-data-science
 ```
-5. To create the VM, run 
+* To create the VM, run 
 ```
 $ vagrant up
 ``` 
-6. Once the setup is finished, we can login to the VM 
+* Once the setup is finished, we can login to the VM 
 ```
 $ vagrant ssh
 ``` 
 
-### Jupyter notebook:
+## Jupyter notebook:
 To launch jupyter run <br />
 ```
 $ jupyter notebook --ip=0.0.0.0
 ```
 You can find the notebook in the host's browser at http://127.0.0.1:8888
 
-### Pycharm integration:
+## Pycharm integration:
 We can use our local Pycharm IDE with the Vagrant box as the Python interpreter. <br />
 In Pycharm go to Preferences > Project > Project Interpreter <br />
 Select "Add remote" in the settings button <br />
@@ -54,10 +54,10 @@ Select Vagrant as the interpreter and the folder of the vagrant box in your comp
 Now the Pycharm interpreter should look like this <br />
 <img src="https://github.com/jaimeps/vagrant-data-science/blob/master/images/vagrant_int.png" width="800"> <br />
 
-### Shared folder:
+## Shared folder:
 For convenience the "shared" folder is synced.
 
-### Customization:
+## Customization:
 - To increase the memory or CPU count, change the following lines in the Vagrantfile: 
 ```
 vb.memory = "1024"
@@ -65,7 +65,7 @@ vb.cpus = 4
 ```
 - To add/remove Python modules in the setup, see the script in ```bootstrap.sh```
 
-### References
+## References
 - [Vagrant Docs](https://www.vagrantup.com/docs/)
 - [Holberton School - Deep Learning Vagrant machine](https://github.com/holbertonschool/deep-learning-vagrant-machine)
 
