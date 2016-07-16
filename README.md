@@ -41,7 +41,7 @@ $ vagrant ssh
 To launch jupyter run <br />
 ```
 $ jupyter notebook --ip=0.0.0.0
-``` <br />
+```
 You can find the notebook in the host's browser at http://127.0.0.1:8888
 
 ### Pycharm integration:
