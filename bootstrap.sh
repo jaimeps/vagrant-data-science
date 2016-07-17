@@ -27,7 +27,7 @@ function pip_install {
 
 # Basics an dependencies
 apt_install python-pip libpq-dev python-dev build-essential python-setuptools
-apt_install python-nose g++ git libatlas3gf-base libatlas-dev pyyaml cython
+apt_install python-nose g++ git libatlas3gf-base libatlas-dev pyyaml cython unixodbc-dev
 apt_install python-numpy python-pandas
 pip_install ipython jupyter
 
