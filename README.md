@@ -18,7 +18,7 @@ The box includes: <br />
 **8. Machine Learning:** [scikit-learn](http://scikit-learn.org/stable/), [theano](http://deeplearning.net/software/theano/), [keras](http://keras.io/), [tensorflow](https://www.tensorflow.org/) <br />
 
 ## Instructions:
-· Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+· Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) <br />
 · Install [Vagrant](https://www.vagrantup.com/) <br />
 · In the terminal, clone the repository <br />
 ```
