@@ -48,8 +48,8 @@ pip_install flask
 apt_install matplotlib
 pip_install seaborn bokeh
 
-# PostgreSQL connection
-pip_install psycopg2
+# DB connection
+pip_install psycopg2 pymongo pyodbc
 
 # AWS
 pip_install boto3

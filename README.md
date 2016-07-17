@@ -11,28 +11,28 @@ The box includes: <br />
 **1. Basics:** [numpy](http://www.numpy.org/), [pandas](http://pandas.pydata.org/), [scipy](https://www.scipy.org/), [jupyter](http://jupyter.org/) <br />
 **2. Data acquisition:** [requests](http://docs.python-requests.org/en/master/), [beautifulsoup](https://www.crummy.com/software/BeautifulSoup/), [feedparser](http://pythonhosted.org/feedparser/), [scrapy](http://scrapy.org/) <br />
 **3. NLP:** [re](https://docs.python.org/2/library/re.html), [NLTK](http://www.nltk.org/) <br />
-**4. Web Framework:** [flask](http://flask.pocoo.org/) <br />
-**5. Visualization:** [matplotlib](http://matplotlib.org/), [seaborn](https://stanford.edu/~mwaskom/software/seaborn/), [bokeh](http://bokeh.pydata.org/en/latest/) <br />
-**6. PostgreSQL connection:** [psycopg2](http://initd.org/psycopg/) <br />
-**7. AWS:** [boto3](https://boto3.readthedocs.io/en/latest/) <br />
+**4. Database connection:** [psycopg2](http://initd.org/psycopg/), [pymongo](https://docs.mongodb.com/getting-started/python/client/), [pyodbc](http://mkleehammer.github.io/pyodbc/) <br />
+**5. AWS:** [boto3](https://boto3.readthedocs.io/en/latest/) <br />
+**6. Web Framework:** [flask](http://flask.pocoo.org/) <br />
+**7. Visualization:** [matplotlib](http://matplotlib.org/), [seaborn](https://stanford.edu/~mwaskom/software/seaborn/), [bokeh](http://bokeh.pydata.org/en/latest/) <br />
 **8. Machine Learning:** [scikit-learn](http://scikit-learn.org/stable/), [theano](http://deeplearning.net/software/theano/), [keras](http://keras.io/), [tensorflow](https://www.tensorflow.org/) <br />
 
 ## Instructions:
-* Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-* Install [Vagrant](https://www.vagrantup.com/) <br />
-* In the terminal, clone the repository <br />
+· Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+· Install [Vagrant](https://www.vagrantup.com/) <br />
+· In the terminal, clone the repository <br />
 ```
 $ git clone git@github.com:jaimeps/vagrant-data-science.git
 ```
-* Change to your project directory <br />
+· Change to your project directory <br />
 ```
 $ cd vagrant-data-science
 ```
-* To create the VM, run 
+· To create the VM, run 
 ```
 $ vagrant up
 ``` 
-* Once the setup is finished, we can login to the VM 
+· Once the setup is finished, we can login to the VM 
 ```
 $ vagrant ssh
 ``` 
